@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <title>Blog</title>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-element">Account</a>
+                <a href="#" class="header__nav-element LogInButton">Sign Up/Log In</a>
+                <a href="settings.html" class="header__nav-element">Settings</a>
+                <a href="#" class="header__nav-element">Help & Support</a>            
+            </nav>           
+
+            
+
+            <div class="header__background">
+            </div>
+
+            <div class="header__info">
+                <div class="header__profile">
+                    <img src="img/avatar.jpg" class="header__profile_pic">
+                    <h1 class="header__profile_title">Mr.Krutoi</h1>
+                    <h2 class="header__profile_subitle">Krasnoyarsk, Russia</h2>
+                    <p class="header__profile_about">Russian Student</p>                      
+                </div>
+                <div class="header__stat">
+                    <div class="header__stat_column">
+                        <p class="column__stat-number">3</p>
+                        <p class="column__stat-name">Posts</p>
+                    </div>
+                    <div class="header__stat_column">
+                        <p class="column__stat-number">5000</p>
+                        <p class="column__stat-name">Followers</p>
+                    </div>
+                    <div class="header__stat_column">
+                        <p class="column__stat-number">100</p>
+                        <p class="column__stat-name">Following</p>
+                    </div>
+                </div>
+
+                <div class="header__button">
+                    <button class="header__button_folow">Follow</button>
+                </div>
+
+            </div>
+        </header>        
+    </main>
+
+
+    <button class="add__newpost_button"></button>
+
+
+    <content class="content"> 
+        <ul class="cards__list">
+        </ul>    
+    </content>
+
+
+
+
+    <div class="modal modal__auth">
+        <h2 class="modal__auth_title">Create An Account</h2>
+        <p class="modal__auth_paragraph">Create an account to become new blog’s owner!</p>
+
+        <form class="modal__auth_form">
+
+            <input class="modal__auth_input" placeholder="email" type="email">
+
+            <input class="modal__auth_input" placeholder="password" type="password">
+
+            <button class="modal__auth_button">Create Account</button>
+        </form>
+
+        <p class="modal__auth_paragraph">Already Have An Account? <a href="#" class="modal__auth_link">Log In</a></p>
+
+    </div>
+
+    <div class="modal modal__login">
+        <h2 class="modal__auth_title">Log In</h2>
+        <p class="modal__auth_paragraph">Welcome back!</p>
+
+        <form class="modal__auth_form">
+
+            <input class="modal__auth_input" placeholder="enter your email" type="email">
+
+            <input class="modal__auth_input" placeholder="create password" type="password">
+
+            <button class="modal__auth_button">Log In</button>
+        </form>
+
+        <p class="modal__auth_paragraph">Don't have an account yet? <a href="#" class="modal__reg_link">Sign Up</a></p>
+
+    </div>
+
+
+
+    <div class="modal modal__create">
+        <div class="modal__header">
+            <button class="modal__button_cancler">Cancel</button>
+            <div class="modal__miniprofile">
+                <p class="modal__miniprofile_username">Mr.Krutoi</p>
+                <img src="img/avatar.jpg" alt="" class="modal__miniprofile_avatar">
+            </div>
+            
+        </div>
+
+        <h2 class="modal__create_title">Create Post</h2>
+            <form action="" class="modal__create_form">
+                <div class="modal__form_dropbox" id="dropbox">
+                    <img class="upload__logo" src="/img/Vector.png" alt="upload icon">
+                    <p class="modal__create_dropbox-text">Drop your image here or <a class="modal__create_browse-link" id="browse-link">browse</a></p>
+                    <input type="file" accept="image/*" id="input-file" style="display: none;">
+                </div>
+                
+                
+                
+
+                <div class="modal__create_container">
+                    <div class="modal__create_input-container">
+                        <p class="modal__create_form-input-title">Title</p>
+                        <input type="text" placeholder="Once upon a time..." class="modal__form_post-title-input">
+                        </div>
+        
+                        <div class="modal__create_input-container">
+                        <p class="modal__create_form-input-title">Description</p>
+                        <input maxlength="200" type="text" placeholder="The start of a wonderful story..." class="modal__form_post-content-input">
+                        </div>        
+                        
+                        <button class="modal__create_post-button">Post</button>
+                </div>              
+
+
+            </form>
+            
+
+    </div>
+
+    
+
+
+
+
+    <footer class="footer">
+    </footer>
+
+    
+
+    <template class="card__template">
+        <li class="card">
+            <h3 class="card__title"></h3>
+            <img class="card__image" src="" alt="">
+            <p class="card__text"></p>
+
+            <div class="card__like-zone">                
+                <button class="card__comment" src="" alt=""></button>
+                <button class="card__like" src="" alt=""></button>
+            </div>
+
+            <div class="card__comment-zone hidden"> 
+                <p>Hello</p>
+                <p>Hello</p>
+                <p>Hello</p>
+                <p>Hello</p>
+            </div>
+            
+        </li>
+    </template>   
+
+
+    
+
+
+
+    <script src="js/modals.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+</body>
+</html>

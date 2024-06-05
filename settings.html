@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Blog</title>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-element">Account</a>
+                <a href="#" class="header__nav-element">Sign Up/Log In</a>
+                <a href="settings.html" class="header__nav-element">Settings</a>
+                <a href="#" class="header__nav-element">Help & Support</a>            
+            </nav>               
+        </header>
+
+        <div class="settings__nav">
+            <h1 class="header__settings">Settings</h1>       
+            <div class="settings__nav-elements">
+            <a class="settings__nav_element" href="#">Settings</a>
+            <a class="settings__nav_element" href="#">Notification</a>
+            <a class="settings__nav_element" href="#">Privacy</a>
+            </div>            
+        </div>  
+
+        <!--main div-->
+        <div class="settings__container">
+            <div class="left__column_container">
+                <div class="profile__avatar"></div>
+                <h2 class="title">Mr.Krutoi</h2>
+                <p class="subtitle">Student</p>
+
+                <div class="settings__stat">
+                    <div class="settings__stat_column">
+                        <p class="column__stat-number-settings">3</p>
+                        <p class="column__stat-name-settings">Posts</p>
+                    </div>
+                    <div class="settings__stat_column">
+                        <p class="column__stat-number-settings">5000</p>
+                        <p class="column__stat-name-settings">Folowers</p>
+                    </div>
+                    <div class="settings__stat_column">
+                        <p class="column__stat-number-settings">100</p>
+                        <p class="column__stat-name-settings">Folowing</p>
+                    </div>
+                </div>
+
+                <button class="edit__avatar">Upload new avatar</button>
+                <p class="location">Krasnoyarsk, Russia</p>
+                <p class="about">Простой студент из СФУ</p>
+
+            </div>
+
+
+
+
+
+            <div class="right__column_container">
+                <form class="input__fileds">
+
+                <div class="basic__info_container">
+                <h3 class="basic__info">Basic Info</h3>
+                <div class="settings__buttons">
+                <button class="cancel__button" type="reset">Cancel</button>
+                <button class="save__button" type="submit">Save</button>
+                </div>
+                </div>
+
+                
+                    <div class="fields__name">
+                        <label class="input__label" for="name">First name
+                        <input class="edit__field" type="text" id="name" name="user_name">
+                        </label>
+
+                        <label class="input__label" for="lastName">Last name
+                        <input class="edit__field" type="text" id="lastName" name="user_lastName">
+                        </label>
+                    </div>
+
+                    <label class="input__label" for="title">Title
+                    <input class="edit__field" type="text" id="title" name="profile__title">
+                    </label>
+
+                    <label class="input__label" for="email">Email
+                    <input class="edit__field" type="email" id="email" name="profile__email">
+                    </label>
+
+                    <label class="input__label" for="about">About me
+                    <textarea class="edit__field" name="about" id="about" cols="30" rows="5"></textarea>
+                    </label>
+
+                </form>                
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    
+    
+</body>
+</html>
