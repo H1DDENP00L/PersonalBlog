@@ -1,0 +1,198 @@
+body{
+    background-color: black;
+}
+
+.settings__nav{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 0;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.header__settings{
+    margin-left: 100px;
+    font-size: 38px;
+}
+
+.settings__nav-elements{
+    margin-left: 110px;
+    display: flex;
+    gap: 29px;    
+}
+
+.settings__nav_element{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+}
+.settings__container {
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    color: white;
+    font-weight: 300;
+    gap: 100px;
+    border-top: 3px solid #00CC14;  
+    padding-top: 100px; 
+}
+
+
+.left__column_container {
+    border-right: 3px solid #00CC14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile__avatar {
+    background-image: url('/img/avatar.jpg');
+    border-radius: 50%;
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    
+}
+.title {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 28px;
+}
+.subtitle {
+    margin-top: 9px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.settings__stat {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.settings__stat_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 50px;
+    align-items: center;
+}
+.settings__stat_column:first-child{
+    border-right: 1px solid white;
+}
+.settings__stat_column:last-child{
+    border-left: 1px solid white;
+}
+
+.column__stat-number-settings {
+    font-weight: 500;
+    font-size: 33px;
+}
+.column__stat-name-settings {
+    font-size: 16px;
+}
+
+
+.edit__avatar {
+    margin-top: 29px;
+    background-color: #00CC14;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+.edit__avatar:hover {
+    background-color: #039612;    
+}
+
+.location {    
+    margin-top: 25px;
+    font-size: 24px;
+}
+.about {
+    padding-bottom: 50px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.right__column_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__fileds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.edit__field{
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #00CC14;
+    width: 100%;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.basic__info_container {
+    border-bottom: 2px solid #00CC14;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+.basic__info {
+}
+
+.fields__name {
+   display: flex;
+   gap: 20px;
+}
+
+.input__label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.settings__buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel__button{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px 10px;
+
+}
+
+.save__button{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: 700;
+
+}

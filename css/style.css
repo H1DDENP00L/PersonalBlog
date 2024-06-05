@@ -1,0 +1,144 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+
+
+.main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+
+}
+
+.header__nav{
+    background-color: black;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header__nav-element{
+    text-decoration: none;
+}
+.header__nav-element:hover{
+    color: rgb(206, 196, 196);
+}
+
+.header__background{
+    height: 350px;
+    background-color:  #00CC14;
+}
+
+.header__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__profile{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__profile_pic{
+    border-radius: 100%;
+    width: 180px;
+    border: 3px solid white;
+    margin-top: -90px;
+}
+
+.header__profile_title{
+    padding-top: 15px;
+}
+
+.header__profile_subitle{
+    
+}
+
+.header__profile_about{
+    padding-top: 20px;
+}
+
+.header__stat{
+    padding: 85px 0 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+.header__stat_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.column__stat-number{
+    color:#00CC14;
+    font-size: 35px;
+}
+
+.column__stat-name{
+    color:white;
+}
+
+.header__button{
+    padding-bottom: 30px;
+}
+
+.header__button_folow{
+    background: none;
+    background-color: #00CC14;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 35px 5px 35px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    
+}
+.header__button_folow:hover{
+    background-color: #02790e;
+}
+
+
+.add__newpost_button{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    background: transparent url('../img/AddPost.png') no-repeat;  
+    border: none;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.add__newpost_button:hover{
+    width: 60px;
+    height: 60px;    
+}
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
